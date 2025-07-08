@@ -41,10 +41,14 @@
 
 ### ⚙️ Backend
 
-- **Lenguaje/Framework**: [`Node.js`](https://nodejs.org/) con [`Express.js`](https://expressjs.com/) o [`NestJS`](https://nestjs.com/)
+- **Lenguaje/Framework**: [`Python`](https://www.python.org/) con [`Flask`](https://flask.palletsprojects.com/) (ligero, ideal para MVPs) o [`Django`](https://www.djangoproject.com/) (más estructurado y completo)
 - **Base de Datos Relacional**: [`PostgreSQL`](https://www.postgresql.org/)
-- **Autenticación**: [Firebase Auth](https://firebase.google.com/products/auth) o [Auth0](https://auth0.com/)
-- **Arquitectura**: RESTful API con endpoints desacoplados y escalables (microservicios si es necesario)
+- **Autenticación**:
+  - Con Django: Sistema de autenticación integrado + soporte para OAuth y JWT ([Django AllAuth](https://django-allauth.readthedocs.io/en/latest/), [Django Rest Framework SimpleJWT](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/))
+  - Con Flask: [Flask-JWT-Extended](https://flask-jwt-extended.readthedocs.io/en/stable/) o integración con [Authlib](https://docs.authlib.org/)
+- **Arquitectura**: RESTful API desacoplada usando [Django REST Framework](https://www.django-rest-framework.org/) o [Flask-RESTful](https://flask-restful.readthedocs.io/).  
+  Escalable con posibilidad de adoptar microservicios (e.g. Flask Blueprint, Django Apps)
+
 
 ### Flujo
 
